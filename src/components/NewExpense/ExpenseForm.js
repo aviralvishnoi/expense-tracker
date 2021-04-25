@@ -31,21 +31,12 @@ const ExpenseForm = () => {
 
   const amountChangeHandler = (event) => {
     setEnteredAmount(event.target.value);
-    // Single state approach
-    // setUserInput({
-    //   ...userInput,
-    //   enteredAmount: event.target.value,
-    // });
   };
 
   const dateChangeHandler = (event) => {
     setEnteredDate(event.target.value);
-    // Single state approach
-    // setUserInput({
-    //   ...userInput,
-    //   enteredDate: event.target.value,
-    // });
   };
+
   const submitHandler = (event) => {
     event.preventDefault();
 
@@ -92,7 +83,7 @@ const ExpenseForm = () => {
           />
         </div>
       </div>
-      <div className="new-expense++actions">
+      <div className="new-expense__actions">
         <button type="submit">Add Expense</button>
       </div>
     </form>
